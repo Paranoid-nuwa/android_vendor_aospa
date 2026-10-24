@@ -34,7 +34,7 @@
   <project remote="clo-la" name="platform/vendor/qcom/opensource/graphics-kernel" path="vendor/qcom/opensource/graphics-kernel" revision="309700425f4b5e761ca3ade9017f12a803aac5a6" upstream="refs/heads/gfx-kernel.lnx.1.0.r2-rel" />
   <!-- AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.204 -->
   <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="b626c6a5410cccea4d6b13bc90f74fc7dce37d9b" upstream="refs/heads/uefi.lnx.4.0.r1-rel" />
-  <project name="AOSPA/kernel_platform_build" path="kernel_platform/build/kernel" remote="aospa" revision="kailua">
+  <project name="kernel_platform_build" path="kernel_platform/build/kernel" remote="xiaomi-8550" revision="kailua">
     <linkfile dest="kernel_platform/build/build.sh" src="build.sh" />
     <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh" />
     <linkfile dest="kernel_platform/build/build_test.sh" src="build_test.sh" />
@@ -55,7 +55,7 @@
     <linkfile dest="kernel_platform/build/abi" src="abi" />
     <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis" />
   </project>
-  <project name="AOSPA/android_kernel_qcom_sm8550" path="kernel_platform/common" remote="aospa" revision="vauxite">
+  <project name="android_kernel_qcom_sm8550" path="kernel_platform/common" remote="xiaomi-8550" revision="calcite">
     <linkfile dest=".source_date_epoch_dir" src="." />
   </project>
   <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="4d5a00ba459e6743f5fcd487d81c7e8e4ebabae5" upstream="refs/heads/kernel.lnx.5.15.r1-rel" />
@@ -126,7 +126,7 @@
   <project path="vendor/qcom/proprietary/bt-devicetree" name="AOSPA/vendor_qcom_proprietary_bt-devicetree" remote="aospa" revision="kailua"/>
   <project path="vendor/qcom/proprietary/camera-devicetree" name="AOSPA/vendor_qcom_proprietary_camera-devicetree" remote="aospa" revision="kailua"/>
   <project path="vendor/qcom/proprietary/data-devicetree" name="AOSPA/vendor_qcom_proprietary_data-devicetree" remote="aospa" revision="kailua"/>
-  <project path="vendor/qcom/proprietary/devicetree" name="AOSPA/vendor_qcom_proprietary_devicetree" remote="aospa" revision="kailua"/>
+  <project path="vendor/qcom/proprietary/devicetree" name="vendor_qcom_proprietary_devicetree" remote="xiaomi-8550" revision="kailua"/>
   <project path="vendor/qcom/proprietary/display-devicetree" name="AOSPA/vendor_qcom_proprietary_display-devicetree" remote="aospa" revision="kailua"/>
   <project path="vendor/qcom/proprietary/eva-devicetree" name="AOSPA/vendor_qcom_proprietary_eva-devicetree" remote="aospa" revision="kailua"/>
   <project path="vendor/qcom/proprietary/graphics-devicetree" name="AOSPA/vendor_qcom_proprietary_graphics-devicetree" remote="aospa" revision="kailua"/>

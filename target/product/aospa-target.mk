@@ -22,6 +22,13 @@ PRODUCT_SOURCE_ROOT_DIRS += -prebuilts/misc/protobuf_vendorcompat \
     -platform_testing/tests/automotive/display_safety \
     -device/generic/trusty/microdroid
 
+# Kernel Platform uses its own tools independently of Android Soong.
+PRODUCT_SOURCE_ROOT_DIRS += \
+    -kernel_platform/prebuilts/clang/host/linux-x86/soong \
+    -kernel_platform/prebuilts \
+    -kernel_platform/external/dtc \
+    -kernel_platform/tools/mkbootimg
+
 # Abstruct
 PRODUCT_PACKAGES += \
     Abstruct
