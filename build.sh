@@ -218,7 +218,12 @@ if [ -d "$DIR_ROOT/kernel_platform/" ] && (
         EXTRA_KERNEL_FLAGS+=' RECOMPILE_KERNEL=1'
         [ -d "${TARGET_KERNEL_OUT}" ] && rm -r "${TARGET_KERNEL_OUT}"
     fi
-    eval "${EXTRA_KERNEL_FLAGS}" ANDROID_KERNEL_OUT="${TARGET_KERNEL_OUT}" KERNEL_VARIANT=gki ./kernel_platform/build/android/prepare_vendor.sh
+    if [ "${DEVICE}" = "nuwa" ] && [ ! -s "${TARGET_KERNEL_OUT}/dtbs/dtbo.img" ]; then
+        eval "${EXTRA_KERNEL_FLAGS}" bash device/xiaomi/nuwa/build-kernel-artifacts.sh
+    else
+        eval "${EXTRA_KERNEL_FLAGS}" ANDROID_KERNEL_OUT="${TARGET_KERNEL_OUT}" KERNEL_VARIANT=gki ./kernel_platform/build/android/prepare_vendor.sh
+    fi
+    checkExit
 fi
 
 # Build a specific module(s)
