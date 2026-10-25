@@ -21,9 +21,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := nuwa
 PRODUCT_NAME := aospa_nuwa
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=nuwa
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Boot Animation

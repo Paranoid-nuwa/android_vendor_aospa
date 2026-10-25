@@ -21,9 +21,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := ishtar
 PRODUCT_NAME := aospa_ishtar
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=ishtar
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Boot Animation
